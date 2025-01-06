@@ -68,7 +68,10 @@ img {
     line-height: 1.5;
 }
 
+
 /* this was interesting to finally use the p[class] that is */
+/* useful practise even though it led me to use the monstrosity
+of a selector below, but I kept it for practise */
 p[class],
 h3 {
     margin: 0.75rem 0 0;
