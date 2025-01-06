@@ -27,7 +27,6 @@ body {
     
 }
 
-
 img {
     max-width: 100%;
     display: block;
@@ -40,7 +39,6 @@ img {
     font-family: "Figtree", sans-serif;
 }
 
-
 .highlight {
     font-weight: 700;
     padding: 0.25em 0.75em;
@@ -48,7 +46,6 @@ img {
     display: inline-block;
     border-radius: 4px;
 }
-
 
 .card-date {
     font-size: 0.75rem;
@@ -147,6 +144,7 @@ footer.mt-small p {
 /* media queries */
 
 @media screen and (width > 600px){
+    /* layout */
     .card {
         max-width: 375px;
     }
