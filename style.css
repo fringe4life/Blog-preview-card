@@ -57,7 +57,13 @@ img {
 .card-title {
     font-weight: 900;
     font-size: 1.25rem;
+
+    &:hover {
+        color: var(--yellow);
+    }
 }
+
+
 
 
 .card-body {
