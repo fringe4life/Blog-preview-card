@@ -113,8 +113,8 @@ footer.mt-small p {
     color: var(--gray-950);
     border-radius: 20px;
 
-    border: 2px solid var(--grey-950);
-    box-shadow: var(--_border-width) var(--_border-width) 0 0 var(--grey-950);
+    border: 1px solid var(--gray-950);
+    box-shadow: var(--_border-width) var(--_border-width) 0 0 var(--gray-950);
 }
 
 .card-img {
