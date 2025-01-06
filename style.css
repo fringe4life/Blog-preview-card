@@ -65,17 +65,6 @@ img {
     line-height: 1.5;
 }
 
-
-/* this was interesting to finally use the p[class] that is */
-/* useful practise even though it led me to use the monstrosity
-of a selector below, but I kept it for practise */
-/* in reality you would just have to list all the classes 
-as this would impact every other p with a class */
-p[class],
-h3 {
-    margin: 0.75rem 0 0;
-}
-
 footer.mt-small p {
     font-weight: 700;
 }
@@ -118,6 +107,8 @@ footer.mt-small p {
     max-width: 320px;
     background-color: var(--white);
     padding: 1.5em;
+    border-top: 2px solid var(--grey-950);
+    border-left: 2px solid var(--grey-950);
     border-bottom: var(--_border-width) solid var(--gray-950);
     border-right: var(--_border-width) solid var(--gray-950);
     color: var(--gray-950);
@@ -136,8 +127,18 @@ footer.mt-small p {
     border-radius: 50%;
 }
 
+/* this was interesting to finally use the p[class] that is */
+/* useful practise even though it led me to use the monstrosity
+of a selector below, but I kept it for practise */
+/* in reality you would just have to list all the classes 
+as this would impact every other p with a class */
+p[class],
+h3 {
+    margin: 1rem 0 0;
+}
+
 .mt-small {
-    margin-top: 0.75em;
+    margin-top: 1rem;
 }
 
 
