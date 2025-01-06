@@ -133,11 +133,11 @@ of a selector below, but I kept it for practise */
 as this would impact every other p with a class */
 p[class],
 h3 {
-    margin: 1rem 0 0;
+    margin: 1.1rem 0 0;
 }
 
 .mt-small {
-    margin-top: 1rem;
+    margin-top: 1.1rem;
 }
 
 
