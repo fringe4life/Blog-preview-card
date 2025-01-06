@@ -153,6 +153,11 @@ footer.mt-small p {
 
     /* typography */
 
+    p[class],
+    h3 {
+        margin: 1rem 0 0;
+    }
+
     .card-title {
         font-size: 1.5rem;
     }
