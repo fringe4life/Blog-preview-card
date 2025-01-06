@@ -1,129 +1,131 @@
 @font-face {
-    font-family: "Figtree";
-    src: url(/assets/fonts/Figtree-VariableFont_wght.ttf);
+	font-family: "Figtree";
+	src: url(/assets/fonts/Figtree-VariableFont_wght.ttf);
 }
 
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html {
-    box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 :root {
-    --yellow: hsl(47, 88%, 63%);
+	--yellow: hsl(47, 88%, 63%);
 
-    --white: hsl(0, 0%, 100%);
+	--white: hsl(0, 0%, 100%);
 
-    --gray-500: hsl(0, 0%, 42%);
-    --gray-950: hsl(0, 0%, 7%);
+	--gray-500: hsl(0, 0%, 42%);
+	--gray-950: hsl(0, 0%, 7%);
 }
 
 body {
-    margin:0;
-    padding: 0;
-    background-color: var(--yellow);
-    
+	margin: 0;
+	padding: 0;
+	background-color: var(--yellow);
 }
 
 img {
-    max-width: 100%;
-    display: block;
-    object-fit: cover;
+	max-width: 100%;
+	display: block;
+	object-fit: cover;
 }
 
 /* typography */
 
 .card {
-    font-family: "Figtree", sans-serif;
+	font-family: "Figtree", sans-serif;
 }
 
 .highlight {
-    font-weight: 700;
-    padding: 0.25em 0.75em;
-    background-color: var(--yellow);
-    display: inline-block;
-    border-radius: 4px;
+	font-weight: 700;
+	padding: 0.25em 0.75em;
+	background-color: var(--yellow);
+	display: inline-block;
+	border-radius: 4px;
 }
 
 .card-date {
-    font-size: 0.75rem;
+	font-size: 0.75rem;
 }
 
 .card-title {
-    font-weight: 900;
-    font-size: 1.25rem;
+	font-weight: 900;
+	font-size: 1.25rem;
 
-    &:hover {
-        color: var(--yellow);
-        cursor: pointer;
-    }
+	&:hover {
+		color: var(--yellow);
+		cursor: pointer;
+	}
 }
 
 .card-body {
-    line-height: 1.5;
+	line-height: 1.5;
 }
 
 footer.mt-small p {
-    font-weight: 700;
+	font-weight: 700;
 }
 
 .card-body,
 footer.mt-small p {
-    font-size: 0.875rem;
+	font-size: 0.875rem;
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
-
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
 
 /* layout */
 
 .flex {
-    display: flex;
-    gap: 1em;
+	display: flex;
+	gap: 1em;
 }
 
 .flex-col {
-    flex-direction: column;
-    
+	flex-direction: column;
 }
 
 .flex-center {
-    justify-content: center;
-    align-items: center;
-    min-height: 100dvh;
+	justify-content: center;
+	align-items: center;
+	min-height: 100dvh;
 }
 
 .flex-vertical-center {
-    align-items: center;
-    gap: 0.75rem;
+	align-items: center;
+	gap: 0.75rem;
 }
 
 .card {
-    /* I believe this is css syntax for local custom properties */
-    --_border-width: 8px;
-    max-width: 320px;
-    background-color: var(--white);
-    padding: 1.5em;
-    color: var(--gray-950);
-    border-radius: 20px;
+	/* I believe this is css syntax for local custom properties */
+	--_border-width: 8px;
+	max-width: 320px;
+	background-color: var(--white);
+	padding: 1.5em;
+	color: var(--gray-950);
+	border-radius: 20px;
 
-    border: 1px solid var(--gray-950);
-    box-shadow: var(--_border-width) var(--_border-width) 0 0 var(--gray-950);
+	border: 1px solid var(--gray-950);
+	box-shadow: var(--_border-width) var(--_border-width) 0 0 var(--gray-950);
 }
 
 .card-img {
-    min-height: 200px;
-    border-radius: 10px;
+	min-height: 200px;
+	border-radius: 10px;
 }
 
 .card-avatar {
-    width: 32px;
-    height: 32px;
-    /* not neccesary in this case as already a circle */
-    border-radius: 50%;
+	width: 32px;
+	height: 32px;
+	/* not neccesary in this case as already a circle */
+	border-radius: 50%;
 }
 
 /* this was interesting to finally use the p[class] that is */
@@ -133,41 +135,33 @@ of a selector below, but I kept it for practise */
 as this would impact every other p with a class */
 p[class],
 h3 {
-    margin: 1.1rem 0 0;
+	margin: 1.25rem 0 0;
 }
 
 .mt-small {
-    margin-top: 1.1rem;
+	margin-top: 1.25rem;
 }
-
-
-
 
 /* media queries */
 
-@media screen and (width > 600px){
-    /* layout */
-    .card {
-        max-width: 375px;
-    }
+@media screen and (width > 600px) {
+	/* layout */
+	.card {
+		max-width: 375px;
+	}
 
-    /* typography */
+	/* typography */
 
-    p[class],
-    h3 {
-        margin: 1rem 0 0;
-    }
+	.card-title {
+		font-size: 1.5rem;
+	}
 
-    .card-title {
-        font-size: 1.5rem;
-    }
+	.card-body {
+		font-size: 1rem;
+	}
 
-    .card-body {
-        font-size: 1rem;
-    }
-
-    .card-date,
-    .card-highlight {
-        font-size: 0.875rem;
-    }
+	.card-date,
+	.card-highlight {
+		font-size: 0.875rem;
+	}
 }
