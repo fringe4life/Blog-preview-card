@@ -1,0 +1,143 @@
+@font-face {
+    font-family: "Figtree";
+    src: url(/assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: inherit;
+}
+
+:root {
+    --yellow: hsl(47, 88%, 63%);
+
+    --white: hsl(0, 0%, 100%);
+
+    --gray-500: hsl(0, 0%, 42%);
+    --gray-950: hsl(0, 0%, 7%);
+}
+
+body {
+    margin:0;
+    padding: 0;
+    background-color: var(--yellow);
+    
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* typography */
+
+.card {
+    font-family: "Figtree", sans-serif;
+}
+
+
+.highlight {
+    font-weight: 700;
+    padding: 0.25em 0.75em;
+    background-color: var(--yellow);
+    display: inline-block;
+    border-radius: 4px;
+}
+
+
+.card-date {
+    font-size: 0.75rem;
+}
+
+.card-title {
+    font-weight: 900;
+    font-size: 1.25rem;
+}
+
+
+.card-body {
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+/* this was interesting to finally use the p[class] that is */
+p[class],
+h3 {
+    margin: 0.75rem 0 0;
+}
+
+footer.mt-small p {
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+/* layout */
+
+.flex {
+    display: flex;
+    gap: 1em;
+}
+
+.flex-col {
+    flex-direction: column;
+    
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+}
+
+.flex-vertical-center {
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.card {
+    /* I believe this is css syntax for local custom properties */
+    --_border-width: 8px;
+    max-width: 320px;
+    background-color: var(--white);
+    padding: 1.5em;
+    border-bottom: var(--_border-width) solid var(--gray-950);
+    border-right: var(--_border-width) solid var(--gray-950);
+    color: var(--gray-950);
+    border-radius: 20px;
+}
+
+.card-img {
+    min-height: 200px;
+    border-radius: 10px;
+}
+
+.card-avatar {
+    width: 32px;
+    height: 32px;
+    /* not neccesary in this case as already a circle */
+    border-radius: 50%;
+}
+
+.mt-small {
+    margin-top: 0.75em;
+}
+
+
+
+
+/* media queries */
+
+@media screen and (width > 600px){
+    .card {
+        max-width: 375px;
+    }
+}
