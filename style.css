@@ -60,6 +60,7 @@ img {
 
     &:hover {
         color: var(--yellow);
+        cursor: pointer;
     }
 }
 
