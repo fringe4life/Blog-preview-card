@@ -107,9 +107,6 @@ footer.mt-small p {
     max-width: 320px;
     background-color: var(--white);
     padding: 1.5em;
-    
-    /* border-bottom: var(--_border-width) solid var(--gray-950);
-    border-right: var(--_border-width) solid var(--gray-950); */
     color: var(--gray-950);
     border-radius: 20px;
 
