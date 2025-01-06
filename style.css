@@ -64,11 +64,7 @@ img {
     }
 }
 
-
-
-
 .card-body {
-    font-size: 0.875rem;
     line-height: 1.5;
 }
 
@@ -80,6 +76,10 @@ h3 {
 
 footer.mt-small p {
     font-weight: 700;
+}
+
+.card-body,
+footer.mt-small p {
     font-size: 0.875rem;
 }
 
@@ -146,5 +146,20 @@ footer.mt-small p {
 @media screen and (width > 600px){
     .card {
         max-width: 375px;
+    }
+
+    /* typography */
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+
+    .card-body {
+        font-size: 1rem;
+    }
+
+    .card-date,
+    .card-highlight {
+        font-size: 0.875rem;
     }
 }
